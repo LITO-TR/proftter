@@ -1,8 +1,8 @@
-export default function Icon({width,imgRoute}){
-    return(
-        <>  
+export default function Icon ({ width, imgRoute }) {
+  return (
+        <>
                 <img src={imgRoute}>
-                </img>   
+                </img>
                 <style jsx>{`
                     img {
                         width:${width};
@@ -11,5 +11,5 @@ export default function Icon({width,imgRoute}){
                     }
                 `}</style>
         </>
-    )
+  )
 }
