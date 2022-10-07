@@ -3,12 +3,11 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import AppLayout from '../components/AppLayout'
 import Button from '../components/Button'
-import Icon from '../components/Icons'
+import Icon from '../components/Icon'
 import { colors } from '../styles/theme'
 import { loginWithGoogle, onAuthStateChanged } from '../firebase/client'
 import { useEffect, useState } from 'react'
 import Avatar from '../components/Avatar'
-// devit
 
 export default function Home () {
   const [user, setUser] = useState(null)
@@ -56,19 +55,23 @@ export default function Home () {
       </AppLayout>
 
       <style jsx>{`
-          div {
-            margin: 8px
-          }
-          section {
-            display:grid;
-            height: 100%;
-            place-content: center;
-            place-items: center;
-          }
-          h2 {
-            font-size: 14px;
-            color: ${colors.primary}
-          }
+      img {
+          width: 120px;
+        }
+        div {
+          margin-top: 16px;
+        }
+        section {
+          display: grid;
+          height: 100%;
+          place-content: center;
+          place-items: center;
+        }
+        h2 {
+          color: ${colors.secondary};
+          font-size: 21px;
+          margin: 0;
+        }
       `}</style>
     </>
   )
